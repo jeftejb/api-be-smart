@@ -53,8 +53,9 @@ app.post("/funcionarios", async(req:any, res:any) =>{
           model: Salarios,
         });
 
+        console.log(res.json(findFuncionario))
         return res.json(findFuncionario);
-      
+    
 
       } catch (error: any) {
        // throw new Error(`Failed to fetch user: ${error.message}`);
