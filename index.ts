@@ -45,6 +45,23 @@ app.post("/funcionario", async(req:any, res:any) =>{
       }
 })
 
+app.post("/funcionarios", async(req:any, res:any) =>{
+    try {
+      
+        const findFuncionario =  await Funcionarios.find({}).populate({
+          path: "salarios",
+          model: Salarios,
+        });
+
+        return res.json(findFuncionario);
+      
+
+      } catch (error: any) {
+       // throw new Error(`Failed to fetch user: ${error.message}`);
+      }
+})
+
+
 app.post("/presenca", async(req:any, res:any)=>{
     const id:string = new mongoose.Types.ObjectId(req.body.id)
     const dadosPresenca:any = {data:req.body.data, hora:req.body.hora}
