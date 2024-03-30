@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 
 const app = express();
-const port = 8000 ;
+const port = process.env.PORT || 8000 ;
 const cors = require("cors");
 
 app.use(cors());
@@ -20,7 +20,7 @@ console.log("Algo deu errado ao fazer a conexao", error)
 })
 
 app.listen(port, ()=>{
-    console.log("O servidor esta rodando na PORTA:3000")
+    console.log("O servidor esta rodando na PORTA:8000")
 })
 
 
