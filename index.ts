@@ -45,7 +45,7 @@ app.post("/funcionario", async(req:any, res:any) =>{
       }
 })
 
-app.post("/funcionarios", async(req:any, res:any) =>{
+app.get("/funcionarios", async(req:any, res:any) =>{
     try {
       
         const findFuncionario =  await Funcionarios.find({}).populate({
