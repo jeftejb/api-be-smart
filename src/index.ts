@@ -26,8 +26,8 @@ app.listen(port, ()=>{
 
 
 // rotas 
-import Funcionarios from "./source/models/funcionarios"
-import Salarios from "./source/models/Salarios"
+import Funcionarios from "../source/models/funcionarios"
+import Salarios from "../source/models/Salarios"
 
 app.post("/funcionario", async(req:any, res:any) =>{
   const email:any = req.body;

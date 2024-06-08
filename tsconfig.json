@@ -2,7 +2,7 @@
   "compilerOptions": {
       "forceConsistentCasingInFileNames": true,
       "esModuleInterop": true,
-      "outDir": "./index.ts",
+      "outDir": "src/index.ts",
       "rootDir": "./source",
       "skipLibCheck": true,
       "strict": true,
