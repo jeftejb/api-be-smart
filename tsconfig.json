@@ -3,12 +3,12 @@
       "forceConsistentCasingInFileNames": true,
       "esModuleInterop": true,
       "outDir": "src/index.ts",
-      "rootDir": "./source",
+      "rootDir": "./source/models",
       "skipLibCheck": true,
       "strict": true,
       "module": "ESNext", 
       "target": "ESNext", 
-       "moduleResolution": "Node"
+       "moduleResolution": "node"
   }, 
   "ts-node": {
      "esm": true, 
@@ -16,4 +16,3 @@
      "transpileOnly": true,
     }
 }
-
