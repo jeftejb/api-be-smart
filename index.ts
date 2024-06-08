@@ -1,12 +1,13 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
+
+import bodyParser  from "body-parser" ;
+import  mongoose  from "mongoose" ;
 //const nodemailer = require("nodemailer");
+import express from "express";
+import cors from "cors";
+const app:any = express();
+const port:any = process.env.PORT || 8080 ;
 
 
-const app = express();
-const port = process.env.PORT || 8000 ;
-const cors = require("cors");
 
 app.use(cors());
 
@@ -20,16 +21,17 @@ console.log("Algo deu errado ao fazer a conexao", error)
 })
 
 app.listen(port, ()=>{
-    console.log("O servidor esta rodando na PORTA:8000")
+    console.log("O servidor esta rodando na PORTA:8080")
 })
 
 
 // rotas 
-import Funcionarios from "./models/funcionarios"
-import Salarios from "./models/Salarios"
+import Funcionarios from "./source/models/funcionarios"
+import Salarios from "./source/models/Salarios"
 
 app.post("/funcionario", async(req:any, res:any) =>{
   const email:any = req.body;
+
     try {
       
         const findFuncionario =  await Funcionarios.findOne({ email: email?.email}).populate({
@@ -53,7 +55,7 @@ app.get("/funcionarios", async(req:any, res:any) =>{
           model: Salarios,
         });
 
-        console.log(res.json(findFuncionario))
+      
         return res.json(findFuncionario);
     
 
@@ -64,7 +66,7 @@ app.get("/funcionarios", async(req:any, res:any) =>{
 
 
 app.post("/presenca", async(req:any, res:any)=>{
-    const id:string = new mongoose.Types.ObjectId(req.body.id)
+    const id:any = new mongoose.Types.ObjectId(req.body.id)
     const dadosPresenca:any = {data:req.body.data, hora:req.body.hora}
     try {
         
