@@ -9,8 +9,12 @@
 
     "routes":[
         {
-            "src":"./(.*)", 
-            "dest":"./**/*.ts"
+            "src":"/(.*)", 
+            "dest":"src/index.ts"
+        }, 
+        {
+            "src":"/(.*)", 
+            "dest":"source/**/*.ts"
         }
     ]
    
