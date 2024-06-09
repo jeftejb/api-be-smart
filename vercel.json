@@ -7,16 +7,8 @@
         }
     ],
 
-    "routes":[
-        {
-            "src":"/(.*)", 
-            "dest":"src/index.ts"
-        }, 
-        {
-            "src":"/(.*)", 
-            "dest":"source/**/*.ts"
-        }
-    ]
+   
+    "rewrites": [{ "source": "/(.*)", "destination": "src/index.ts" }]
    
 
 }
