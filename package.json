@@ -5,9 +5,9 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "nodemon --exec node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/index.ts",
+    "start": "node dist/index.ts",
     "test": "jest",
-    "dev": "ts-node src/node.ts",
+    "dev": "nodemon --exec node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/index.ts",
     "build": "tsc",
     "vercel-build": "echo ola"
   },

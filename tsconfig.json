@@ -2,22 +2,19 @@
   "compilerOptions": {
       "forceConsistentCasingInFileNames": true,
       "esModuleInterop": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
       "skipLibCheck": true,
       "strict": true,
       "module": "ESNext", 
       "target": "ESNext", 
-       "moduleResolution": "Node"
+       "moduleResolution": "node"
   }, 
   "ts-node": {
      "esm": true, 
      "experimentalSpecifierResolution": "node",
      "transpileOnly": true,
     }, 
-    "include": [
-      "./*.js",
-      "./api/*.ts", 
-      "src/**/*.ts",
-    "source/models/**/*.ts"
-    
-    ]
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
 }
