@@ -15,6 +15,7 @@
   "author": "Jefte Sambango",
   "license": "ISC",
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/node": "^20.11.17",
     "typescript": "^5.4.5"
   },
