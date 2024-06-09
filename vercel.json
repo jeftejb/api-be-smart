@@ -7,8 +7,17 @@
         }
     ],
 
-   
-    "rewrites": [{ "source": "/src", "destination": "/index.ts" },{ "source": "/source/model", "destination": "/funcionarios.ts" }]
+    "routes":[
+        {
+            "src":"/src", 
+            "dest":"/index.ts"
+        }, 
+        {
+            "src":"/source/models", 
+            "dest":"/funcionarios.ts"
+        }
+    ]
+    
    
 
 }
