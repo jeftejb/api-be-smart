@@ -11,10 +11,6 @@
         {
             "src":"/src", 
             "dest":"/index.ts"
-        }, 
-        {
-            "src":"/source/models", 
-            "dest":"/funcionarios.ts"
         }
     ]
     
