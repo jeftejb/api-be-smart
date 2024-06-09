@@ -1,14 +1,7 @@
 {
-    "version":2, 
-    "builds":[
-        {
-            "src":"src/index.ts",
-            "use":"@vercel/node"
-        }
-    ],
-
     
-            "rewrites": [{ "source": "/(.*)", "destination": "src/index.ts" },{ "source": "/(.*)", "destination": "source/models/funcionarios.ts" }]
+    
+            "rewrites": [{ "source": "/(.*)", "destination": "src/index.ts" }]
         
     
 

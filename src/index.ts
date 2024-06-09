@@ -25,7 +25,6 @@ app.listen(port, ()=>{
 })
 
 
-// rotas 
 import Funcionarios from "../source/models/funcionarios"
 import Salarios from "../source/models/Salarios"
 

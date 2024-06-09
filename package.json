@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "start": "nodemon --exec node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/index.ts",
-    "test": "Error"
+    "test": "jest",
+    "dev": "ts-node src/node.ts",
+    "build": "tsc",
+    "vercel-build": "echo ola"
   },
   "keywords": [],
   "author": "Jefte Sambango",
