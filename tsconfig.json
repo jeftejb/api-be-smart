@@ -2,12 +2,12 @@
   "compilerOptions": {
       "forceConsistentCasingInFileNames": true,
       "esModuleInterop": true,
-      "outDir": "./dist",
+      "outDir": "./src",
       "rootDir": "./src",
       "skipLibCheck": true,
       "strict": true,
       "module": "ESNext", 
-      "target": "ESNext", 
+      "target": "es6", 
        "moduleResolution": "node"
   }, 
   "ts-node": {
